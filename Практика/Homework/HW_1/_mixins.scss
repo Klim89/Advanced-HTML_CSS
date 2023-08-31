@@ -1,0 +1,14 @@
+@mixin font_style($fontSize, $fontWeight, $fontFamily: Lato, $fontStyle: normal, $lineHeight: normal) {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+
+@mixin centerflex() {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
