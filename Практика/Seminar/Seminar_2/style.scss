@@ -1,0 +1,58 @@
+// Текст задания
+// 1. Создать элемент details и добавить в него произвольный
+// контент
+// 2. Добавить элемент summary с произвольным текстом
+// 3. Удалить стандартный треугольник у элемента details.
+// 4. Добавить стили для элемента summary
+// 5. Заменить стандартный треугольник на стрелку вправо
+// \2192
+// 6. При открытии блока details заменить на стрелку вниз
+// (данный код нужно найти в интернете)
+
+summary {
+    display: block;
+}
+  
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary {
+    list-style-type: "➜";
+}
+  
+details[open] > summary {
+    list-style-type: "⤋";
+}
+
+// 1. Дана страница каталога
+// https://www.figma.com/file/SbfOi2i4S1pIs0G6uOLPCx/shop-(Copy)?node-id=52%3A0&t=yqDGV1N
+// UHY97IcQQ-0
+// 2. Необходимо реализовать блок sort (данный блок находится в слоях figma)
+// 3. Создать 3 элемента details (TRENDING NOW, SIZE, PRICE)
+// 4. При клике на элемент SIZE появляется выпадающая сортировка.
+
+.contener-detail {
+    display: flex;
+    justify-content: flex-start;
+    gap: 330px;
+
+    .sort {
+        display: flex;
+        gap: 48px;
+
+        .wrap_size {
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+            padding: 9px 30px 12px 9px;
+            background: #fff;
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            gap: 6px;
+        }
+    }
+}
+
+svg {
+    margin-left: 10px;
+}
