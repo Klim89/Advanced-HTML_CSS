@@ -137,6 +137,8 @@ svg {
   margin-top: 24px;
 }
 .promo-block__text {
+  display: inline-block;
+  max-width: 555px;
   text-align: center;
   color: #5E5E5E;
   text-align: center;
@@ -172,12 +174,17 @@ svg {
   align-items: center;
   gap: 23px;
 }
+.promo-block__sort__details {
+  position: relative;
+}
 .promo-block__sort__summary {
   display: flex;
   align-items: center;
   gap: 9px;
 }
 .promo-block__sort__box {
+  position: absolute;
+  width: 79px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -185,6 +192,7 @@ svg {
   box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
   padding: 7px 30px 11px 9px;
   z-index: 10;
+  left: 5px;
 }
 .promo-block__sort__check {
   display: flex;
