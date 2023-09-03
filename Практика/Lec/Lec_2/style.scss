@@ -33,13 +33,12 @@ a {
     padding-top: 39px;
     position: relative;
     display: flex;
-    gap: $gapGrid;
-    padding-top: 39px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
 .filter {
-    padding: 13px;
+    padding-top: 13px;
     width: 360px;
     box-sizing: border-box;
     position: relative;
@@ -75,11 +74,7 @@ a {
 
     &__heading {
         color: $colorText;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+        @include font_style(14px, 600);
     }
 
     &__item {
@@ -87,16 +82,15 @@ a {
     }
 
     &__head {
-        margin-top: 16px;
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font_style(14px, 400);
         padding: 8px 11px 11px 11px;
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid $colorSelectSite;
+    }
+
+    &__item[open] .filter__head {
+        color: $colorSelectSite;
     }
 
     &__link-box {
@@ -109,69 +103,57 @@ a {
     &__link {
         color: #6F6E6E;
         font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font_style(14px, 400);
+
         &:hover {
             color: $colorSelectSite;
         }
     }
-
-    &__item[open] .filter__head {
-        color: $colorSelectSite;
-    }
 }
 
 .sort {
-     padding-top: 12px;
-     display: flex;
-     gap: 18px;
 
-     &__details {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+
+    &__details {
         position: relative;
-     }
+    }
 
-     &__summary {
+    &__summary {
         display: flex;
         align-items: center;
         gap: 10px;
-     }
+    }
 
-     &__check {
+    &__check {
         display: flex;
         align-items: center;
         gap: 9px;
         color: #6F6E6E;
+        @include font_style(14px, 400);
         font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-     }
+    }
 
-     &__heading {
+    &__heading {
         color: #6F6E6E;
-        font-family: Lato;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        @include font_style(14px, 400);
     }
 
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 9px;
         background: #FFF;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         padding: 7px 30px 11px 9px;
         position: absolute;
         left: -9px;
         top: 22px;
+        z-index: 10;
     }
 }
-
 .header {
     background-color: $backBlock;
     padding-top: 20px;
