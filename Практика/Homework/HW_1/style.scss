@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'mixins';
 @import 'product';
+@import 'catalog';
 
 @-webkit-keyframes scale-in-center {
     0% {
@@ -919,13 +920,14 @@ body {
 }
 
 .subscribe {
-    padding-left: calc(50% - $widthSite / 2);
-    padding-right: calc(50% - $widthSite / 2);
+    // padding-left: calc(50% - $widthSite / 2);
+    // padding-right: calc(50% - $widthSite / 2);
 
     .box {
         position: relative;
         max-height: 448px;
         background: url(img/subscribe_back.png), lightgray 0px -169px / 100% 246.875% no-repeat;
+        background-position: bottom;
         background-size: cover;
         display: flex;
         justify-content: space-between;
