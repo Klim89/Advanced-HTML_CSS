@@ -1,6 +1,5 @@
 body {
   font-family: "Lato", sans-serif;
-  font-family: "Roboto", sans-serif;
 }
 
 summary {
@@ -204,7 +203,7 @@ svg {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 .promo-block__sort__heading {
   color: #6F6E6E;
@@ -371,7 +370,7 @@ svg {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
 }
 .sort__heading {
   color: #6F6E6E;
