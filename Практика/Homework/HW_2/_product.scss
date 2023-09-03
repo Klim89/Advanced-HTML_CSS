@@ -44,7 +44,7 @@ svg {
 
 .carousel {
 
-    .carousel-inner {
+    &-inner {
         background-color: #F7F7F7;
 
         .product_img {
@@ -52,18 +52,18 @@ svg {
             max-height: 724px;
             flex-shrink: 0;
         }
-
-        .carousel-item {
-            text-align: center;
-            padding-top: 11px;
-            padding-bottom: 42px;
-            padding-left: calc(50% - 800px);
-            padding-right: calc(50% - 800px);
-
-        }
     }
 
-    .carousel-control-next {
+    &-item {
+        text-align: center;
+        padding-top: 11px;
+        padding-bottom: 42px;
+        padding-left: calc(50% - 800px);
+        padding-right: calc(50% - 800px);
+
+    }
+
+    &-control-next {
         &-icon {
             width: 47px;
             height: 47px;
@@ -78,7 +78,7 @@ svg {
         }
     }
 
-    .carousel-control-prev {
+    &-control-prev {
         &-icon {
             width: 47px;
             height: 47px;
