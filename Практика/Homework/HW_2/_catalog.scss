@@ -14,13 +14,12 @@
     padding-top: 39px;
     position: relative;
     display: flex;
-    gap: 16px;
-    padding-top: 39px;
+    gap: 30px;
     box-sizing: border-box;
 }
 
 .filter {
-    padding: 13px;
+    padding-top: 13px;
     width: 360px;
     box-sizing: border-box;
     position: relative;
@@ -64,12 +63,15 @@
     }
 
     &__head {
-        margin-top: 16px;
         color: #6F6E6E;
         @include font_style(14px, 400);
         padding: 8px 11px 11px 11px;
         border-bottom: 1px solid #EBEBEB;
         border-left: 5px solid $colorTextPink;
+    }
+
+    &__item[open] .filter__head {
+        color: $colorTextPink;
     }
 
     &__link-box {
@@ -83,42 +85,39 @@
         color: #6F6E6E;
         font-family: Lato;
         @include font_style(14px, 400);
-       
+
         &:hover {
             color: $colorTextPink;
         }
     }
-
-    &__item[open] .filter__head {
-        color: $colorTextPink;
-    }
 }
 
 .sort {
-     padding-top: 12px;
-     display: flex;
-     gap: 18px;
 
-     &__details {
+    padding-top: 12px;
+    display: flex;
+    gap: 18px;
+
+    &__details {
         position: relative;
-     }
+    }
 
-     &__summary {
+    &__summary {
         display: flex;
         align-items: center;
         gap: 10px;
-     }
+    }
 
-     &__check {
+    &__check {
         display: flex;
         align-items: center;
         gap: 9px;
         color: #6F6E6E;
         @include font_style(14px, 400);
         font-family: Roboto;
-     }
+    }
 
-     &__heading {
+    &__heading {
         color: #6F6E6E;
         @include font_style(14px, 400);
     }
@@ -126,13 +125,56 @@
     &__box {
         display: flex;
         flex-direction: column;
-        gap: 8px;
+        gap: 9px;
         background: #FFF;
         box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         padding: 7px 30px 11px 9px;
         position: absolute;
         left: -9px;
         top: 22px;
+        z-index: 10;
+    }
+}
+
+// Стилизация checkbox
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &+label {
+        display: inline-flex;
+        align-items: center;
+        user-select: none;
+        gap: 9px;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 12px;
+            height: 13px;
+            flex-shrink: 0;
+            border: 1px solid rgba(235, 235, 235, 1);
+            background-repeat: no-repeat;
+            background-size: auto;
+        }
+    }
+
+    &:checked+label::before {
+        border-color: $colorTextPink;
+        background-color: $colorTextPink;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+    }
+
+    // при наведении
+    &:not(:disabled):not(:checked)+label:hover::before {
+        border-color: $colorTextPink;
+    }
+
+    // для активного состояния чекбокса (при нажатии)
+    &:not(:disabled):active+label::before {
+        background-color: $colorTextPink;
+        border-color: $colorTextPink;
     }
 }
 
@@ -144,14 +186,14 @@
     margin-bottom: 1.5px;
 
     &__menu {
-        height:  19px;
+        height: 19px;
         display: flex;
         border: 1px solid #EBEBEB;
         border-radius: 4px;
         padding: 12px 15px;
 
         &:hover {
-            border-color:#EF5B70;
+            border-color: #EF5B70;
             transition: all 1s;
         }
 
@@ -168,9 +210,9 @@
             &:last-child {
                 padding-top: 2px;
             }
-            
+
             &:hover {
-                color:#EF5B70;
+                color: #EF5B70;
             }
 
             &:hover path {

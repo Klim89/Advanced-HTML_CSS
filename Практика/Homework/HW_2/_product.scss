@@ -139,6 +139,8 @@ svg {
     }
 
     &__text {
+        display: inline-block;
+        max-width: 555px;
         text-align: center;
         color: #5E5E5E;
         text-align: center;
@@ -166,7 +168,12 @@ svg {
         padding-top: 65.05px;
         @include centerflex();
         gap: 23px;
-    
+
+        &__details {
+
+            position: relative;
+        }
+
         &__summary {
             display: flex;
             align-items: center;
@@ -174,6 +181,8 @@ svg {
         }
 
         &__box {
+            position: absolute;
+            width: 79px;
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -181,6 +190,7 @@ svg {
             box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
             padding: 7px 30px 11px 9px;
             z-index: 10;
+            left: 5px;
         }
 
         &__check {
