@@ -267,7 +267,6 @@ svg {
 .filter__sort {
   height: 132px;
   padding-top: 39px;
-  position: relative;
   display: flex;
   gap: 30px;
   box-sizing: border-box;
@@ -277,7 +276,6 @@ svg {
   padding-top: 13px;
   width: 360px;
   box-sizing: border-box;
-  position: relative;
   z-index: 10;
 }
 .filter__content {
