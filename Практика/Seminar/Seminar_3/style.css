@@ -1,0 +1,55 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  font-family: "merriweatherblack";
+}
+.header__text {
+  font-family: "open_sansitalic";
+}
+.header__text2 {
+  font-family: "open_sansitalic";
+  -webkit-text-stroke: 1px aqua; /* Параметры контура */
+  color: transparent; /* Прозрачный цвет */
+}
+
+.box {
+  width: 0;
+  height: 0;
+  border-width: 0 100px 100px 100px;
+  border-color: transparent transparent #FF0000 transparent;
+  border-style: solid;
+}
+
+.border {
+  width: 260px;
+  height: 200px;
+  border-style: solid;
+  border-image-width: 15px;
+  border-image-source: url(https://w.forfun.com/fetch/4d/4d671cfe78cbb63a617875e1f6023157.jpeg);
+  border-image-slice: 30;
+  border-image-repeat: stretch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrap {
+  height: 200px;
+  padding: 25px;
+  background-color: #FF0000;
+}
+
+.gradient {
+  height: 150px;
+  width: 50%;
+  margin: 0 auto;
+  border: 10px solid transparent;
+  -o-border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+     border-image: linear-gradient(to right, transparent 0%, #ADF2F7 100%);
+  border-image-slice: 1;
+}/*# sourceMappingURL=style.css.map */
