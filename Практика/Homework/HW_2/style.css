@@ -39,13 +39,18 @@ svg {
   line-height: normal;
   color: #636363;
 }
-.top-header .bredcrumbs__link_site {
+.top-header .bredcrumbs__link:last-child {
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   color: #F16D7F;
+}
+.top-header .bredcrumbs__link:not(:last-child)::after {
+  content: "/";
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 .carousel-inner {
@@ -274,6 +279,7 @@ svg {
 
 .filter {
   padding-top: 13px;
+  position: relative;
   width: 360px;
   box-sizing: border-box;
   z-index: 10;
@@ -1225,6 +1231,7 @@ body {
 }
 
 .promo {
+  padding-top: 104px;
   margin-top: 95px;
   padding-bottom: 104px;
   background-color: #222224;
@@ -1254,13 +1261,10 @@ body {
     padding-right: calc(50% - 187.5px);
   }
 }
-.promo .delivery,
-.promo .quality {
-  padding-top: 103px;
-}
-.promo .delivery:hover,
-.promo .quality:hover {
+.promo .delivery:active,
+.promo .quality:active {
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all 2s;
 }
 @media (max-width: 1165px) {
   .promo .delivery,
@@ -1268,11 +1272,9 @@ body {
     padding-top: 48.47px;
   }
 }
-.promo .sales {
-  padding-top: 104px;
-}
-.promo .sales:hover {
+.promo .sales:active {
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  transition: all 2s;
 }
 @media (max-width: 1165px) {
   .promo .sales {

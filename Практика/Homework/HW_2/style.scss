@@ -806,6 +806,7 @@ body {
 }
 
 .promo {
+    padding-top: 104px;
     margin-top: 95px;
     padding-bottom: 104px;
     background-color: $colorBlackIntense;
@@ -835,10 +836,10 @@ body {
 
     .delivery,
     .quality {
-        padding-top: 103px;
 
-        &:hover {
+        &:active {
             animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            transition: all 2s;
         }
 
         @media (max-width: 1165px) {
@@ -847,10 +848,10 @@ body {
     }
 
     .sales {
-        padding-top: 104px;
 
-        &:hover {
+        &:active {
             animation: scale-down-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            transition: all 2s;
         }
 
         @media (max-width: 1165px) {

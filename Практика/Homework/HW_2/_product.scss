@@ -35,10 +35,16 @@ svg {
         @include font_style(14px, 300);
         color: #636363;
 
-        &_site {
+        &:last-child {
             @include font_style(14px, 700);
             color: $colorTextPink;
         }
+
+        &:not(:last-child)::after {
+            content: "/";
+            padding-left: 6px;
+            padding-right: 6px;
+        }  
     }
 }
 
