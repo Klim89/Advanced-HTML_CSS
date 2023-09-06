@@ -634,6 +634,87 @@ input::-webkit-inner-spin-button {
   background-color: rgb(241, 109, 127);
   color: #FFF;
 }
+.shopping-cart__checkout {
+  width: 360px;
+  height: 214px;
+  background-color: #F5F3F3;
+  margin-top: 57px;
+}
+.shopping-cart__checkout .checkout__button {
+  display: block;
+  width: 273px;
+  height: 50px;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #FFF;
+  padding: 15px 41px;
+  margin-top: 17px;
+  margin-left: 42px;
+  text-align: center;
+  background-color: #F16D7F;
+  border: 0;
+}
+.shopping-cart__checkout .checkout__button:hover {
+  border: 1px solid #6F6E6E;
+  background-color: transparent;
+  color: #222;
+  transition: all 1s;
+}
+.shopping-cart__text_sub {
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 39px;
+  padding-left: 218px;
+}
+.shopping-cart__text_sub::after {
+  content: "$900";
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 26px;
+}
+.shopping-cart__text_total {
+  text-align: center;
+  position: relative;
+  padding: 21px;
+  color: #222;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 153px;
+  padding-top: 12px;
+}
+.shopping-cart__text_total::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 43px;
+  width: 275px;
+  border-bottom: 1px solid #E2E2E2;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+.shopping-cart__text_total::after {
+  content: "$900";
+  color: #F16D7F;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 26px;
+}
 
 .shopping-cart__adress {
   margin-top: 113px;
@@ -665,6 +746,11 @@ input::-webkit-inner-spin-button {
 }
 .shopping-cart__adress .adress-input__text:hover {
   border-color: rgb(241, 109, 127);
+}
+.shopping-cart__adress .adress-input__text:focus {
+  border-color: transparent;
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(241, 109, 127);
 }
 .shopping-cart__adress .adress-input__text:not(:last-child) {
   margin-bottom: 20px;
@@ -1808,6 +1894,10 @@ body {
 .subscribe__right form input:hover {
   background: #E05C6E;
   color: #FFF;
+}
+.subscribe__right form input:focus {
+  border-color: transparent;
+  outline: 0;
 }
 .subscribe__form {
   color: #222224;

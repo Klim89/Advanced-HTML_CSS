@@ -168,8 +168,76 @@ input::-webkit-inner-spin-button {
             }
         }
     }
-}
 
+    &__checkout {
+        width: 360px;
+        height: 214px;
+        background-color: #F5F3F3;
+        margin-top: 57px;
+
+        .checkout__button {
+            display: block;
+            width: 273px;
+            height: 50px;
+            @include font_style(16px, 300);
+            color: #FFF;
+            padding: 15px 41px;
+            margin-top: 17px;
+            margin-left: 42px;
+            text-align: center;
+            background-color: $colorTextPink;
+            border: 0;
+
+            &:hover {
+                border: 1px solid #6F6E6E;
+                background-color: transparent;
+                color: $colorBlack;
+                transition: all 1s;
+            }
+        }
+    }
+
+    &__text_sub {
+        color: #4A4A4A;
+        @include font_style(11px, 400);
+        padding-top: 39px;
+        padding-left: 218px;
+
+        &::after {
+            content: "$900";
+            color: #4A4A4A;
+            @include font_style(11px, 400);
+            padding-left: 26px;
+        }
+    }
+
+    &__text_total {
+        text-align: center;
+        position: relative;
+        padding: 21px;
+        color: $colorBlack;
+        @include font_style(16px, 300);
+        padding-left: 153px;
+        padding-top: 12px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 43px;
+            width: 275px;
+            border-bottom: 1px solid #E2E2E2;
+            filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+        }
+
+        &::after {
+            content: "$900";
+            color: $colorTextPink;
+            @include font_style(16px, 700);
+            padding-left: 26px;
+        }
+    }
+}
 
 .shopping-cart__adress {
     margin-top: 113px;
@@ -196,6 +264,12 @@ input::-webkit-inner-spin-button {
 
             &:hover {
                 border-color: rgba(241, 109, 127, 1);
+            }
+
+            &:focus {
+                border-color: transparent;
+                outline: 0;
+                box-shadow: 0 0 0 0.15rem rgba(241, 109, 127, 1);
             }
 
             &:not(:last-child) {
