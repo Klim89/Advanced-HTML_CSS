@@ -1033,7 +1033,6 @@ body {
 
             @media (max-width: 360px) {
                 width: auto;
-                ;
             }
 
             input {
@@ -1046,6 +1045,9 @@ body {
                 padding-left: 22px;
                 padding-right: 22px;
                 text-overflow: ellipsis;
+                color: $colorBlack;
+                @include font_style(14px, 400);
+                transition: all 1s;
 
                 @media (max-width: 1165px) {
                     border: 0;
