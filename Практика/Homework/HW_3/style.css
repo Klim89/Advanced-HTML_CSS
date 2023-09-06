@@ -1440,6 +1440,10 @@ body {
   font-weight: 400;
   line-height: normal;
 }
+.promo .header__promo:hover {
+  color: #F16D7F;
+  transition: all 1s;
+}
 .promo .header__promo_1 {
   margin-top: 28.07px;
   margin-bottom: 16px;

@@ -877,6 +877,11 @@ body {
     .header__promo {
         color: #FBFBFB;
         @include font_style(19.96px, 400);
+
+        &:hover {
+            color: $colorTextPink;
+            transition: all 1s;
+        }
     }
 
     .header__promo_1 {
