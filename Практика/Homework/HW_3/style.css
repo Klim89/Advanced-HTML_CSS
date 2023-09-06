@@ -508,12 +508,12 @@ input::-webkit-inner-spin-button {
   line-height: normal;
   color: #222;
 }
-.shopping-cart__heading .card__close {
+.shopping-cart__heading .cart__close {
   position: absolute;
   top: 28px;
   right: 22px;
 }
-.shopping-cart__heading .card__close:hover > svg path {
+.shopping-cart__heading .cart__close:hover > svg path {
   fill: #F16D7F;
 }
 .shopping-cart__list {
