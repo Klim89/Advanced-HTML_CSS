@@ -628,6 +628,7 @@ input::-webkit-inner-spin-button {
   background-color: #FFF;
   border: 1px solid #A4A4A4;
   transition: all 1s;
+  cursor: pointer;
 }
 .shopping-cart__buttons .cart__button:hover {
   border: 1px solid #9F9F9F;
@@ -662,6 +663,7 @@ input::-webkit-inner-spin-button {
   background-color: transparent;
   color: #222;
   transition: all 1s;
+  cursor: pointer;
 }
 .shopping-cart__text_sub {
   color: #4A4A4A;
@@ -797,6 +799,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #B1B1B1;
   background-color: rgb(241, 109, 127);
   color: #FFF;
+  cursor: pointer;
 }
 @keyframes scale-in-center {
   0% {
