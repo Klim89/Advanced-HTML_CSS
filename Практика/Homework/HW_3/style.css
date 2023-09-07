@@ -516,7 +516,7 @@ input::-webkit-inner-spin-button {
   background-color: #FFF;
 }
 .shopping-cart__list-box:hover {
-  animation: shadow-inset-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: shadow-inset-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 .shopping-cart__content {
   padding-top: 22px;
@@ -612,7 +612,7 @@ input::-webkit-inner-spin-button {
   line-height: normal;
 }
 .shopping-cart__buttons .button_right {
-  animation: scale-up-center 2s cubic-bezier(0.39, 0.575, 0.565, 1) 2 both;
+  animation: scale-up-center 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) 2 both;
 }
 .shopping-cart__buttons .cart__button {
   display: block;
@@ -1595,7 +1595,7 @@ body {
 .promo .delivery:active,
 .promo .quality:active {
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  transition: all 2s;
+  transition: all 1.5s;
 }
 @media (max-width: 1165px) {
   .promo .delivery,
@@ -1605,7 +1605,7 @@ body {
 }
 .promo .sales:active {
   animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  transition: all 2s;
+  transition: all 1.5s;
 }
 @media (max-width: 1165px) {
   .promo .sales {
@@ -2009,7 +2009,6 @@ body {
   align-items: center;
 }
 .footer__logo:hover path {
-  transition: all 0.5s;
   fill: rgb(255, 255, 255);
   background-color: rgb(241, 109, 127);
 }

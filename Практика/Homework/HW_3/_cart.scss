@@ -51,7 +51,7 @@ input::-webkit-inner-spin-button {
         background-color: #FFF;
 
         &:hover {
-            animation: shadow-inset-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: shadow-inset-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         }
     }
 
@@ -147,7 +147,7 @@ input::-webkit-inner-spin-button {
         @include font_style(14px, 300);
 
         .button_right {
-            animation: scale-up-center 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 both;
+            animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 both;
         }
 
         .cart__button {
