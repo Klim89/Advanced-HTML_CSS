@@ -736,6 +736,7 @@ input::-webkit-inner-spin-button {
   border: 1px solid #A4A4A4;
   padding-left: 17px;
   padding-right: 17px;
+  margin-bottom: 20px;
   text-overflow: ellipsis;
   color: #222;
   font-family: Lato;
@@ -751,9 +752,6 @@ input::-webkit-inner-spin-button {
   border-color: transparent;
   outline: 0;
   box-shadow: 0 0 0 0.15rem rgb(241, 109, 127);
-}
-.shopping-cart__adress .adress-input__text:not(:last-child) {
-  margin-bottom: 20px;
 }
 .shopping-cart__adress .adress-input__text::-moz-placeholder {
   color: #B1B1B1;
