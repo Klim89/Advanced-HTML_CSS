@@ -151,7 +151,6 @@ input::-webkit-inner-spin-button {
         }
 
         .cart__button {
-            display: block;
             padding: 17px 41px;
             text-align: center;
             height: 50px;
@@ -177,7 +176,6 @@ input::-webkit-inner-spin-button {
         margin-top: 57px;
 
         .checkout__button {
-            display: block;
             width: 273px;
             height: 50px;
             @include font_style(16px, 300);
@@ -288,7 +286,6 @@ input::-webkit-inner-spin-button {
 
         &__button {
             margin-top: 3px;
-            display: block;
             width: 101.408px;
             height: 35px;
             text-align: center;
