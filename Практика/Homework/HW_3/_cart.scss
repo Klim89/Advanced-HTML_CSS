@@ -30,29 +30,30 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
 }
 
-.shopping-cartbox {
-    display: flex;
-    gap: 129px;
-}
-
 .shopping-cart {
-    margin-top: 96px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 
-    &__list-box {
-        box-sizing: border-box;
+    &-box {
         display: flex;
-        position: relative;
-        width: 652px;
-        max-height: 306px;
-        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
-        background-color: #FFF;
+        gap: 129px;  
+    }
 
-        &:hover {
-            animation: shadow-inset-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-        }
+    &-section {
+        margin-top: 96px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    width: 652px;
+    max-height: 306px;
+    filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+    background-color: #FFF;
+
+    &:hover {
+        animation: shadow-inset-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     &__content {
@@ -66,15 +67,15 @@ input::-webkit-inner-spin-button {
     &__heading {
         @include font_style(24px, 400);
         color: $colorBlack;
+    }
 
-        .cart__close {
-            position: absolute;
-            top: 28px;
-            right: 22px;
+    &__close {
+        position: absolute;
+        top: 28px;
+        right: 22px;
 
-            &:hover>svg path {
-                fill: $colorTextPink;
-            }
+        &:hover>svg path {
+            fill: $colorTextPink;
         }
     }
 
@@ -88,116 +89,155 @@ input::-webkit-inner-spin-button {
         gap: 6px;
         @include font_style(22px, 400);
         color: #575757;
+    }
 
-        .cart__price::after {
-            content: " $300";
-            color: #EF5B70;
-        }
+    &__price::after {
+        content: " $300";
+        color: #EF5B70;
+    }
 
-        .cart__color::after {
-            content: " Red";
-            color: #6F6E6E;
-        }
+    &__color::after {
+        content: " Red";
+        color: #6F6E6E;
+    }
 
-        .cart__size::after {
-            content: " Xl";
-            color: #6F6E6E;
-        }
+    &__size::after {
+        content: " Xl";
+        color: #6F6E6E;
+    }
 
-        .cart__quantity {
+    &__label {
+        display: flex;
+        align-items: flex-end;
+        gap: 24.41px;
+        text-overflow: ellipsis;
+    }
 
-            &__input {
-                display: flex;
-                align-items: flex-end;
-                gap: 24.41px;
-                text-overflow: ellipsis;
+    &__input {
+        display: block;
+        left: 153px;
+        bottom: 62.05px;
+        text-align: center;
+        width: 44px;
+        height: 24.95px;
+        @include font_style(18px, 400);
+        color: #656565;
+        background-color: #FFF;
+        background-clip: padding-box;
+        border: 2px solid rgba(234, 234, 234, 1);
+        padding-left: 4px;
+        padding-right: 4px;
 
-                &__number {
-                    display: block;
-                    left: 153px;
-                    bottom: 62.05px;
-                    text-align: center;
-                    width: 44px;
-                    height: 24.95px;
-                    @include font_style(18px, 400);
-                    color: #656565;
-                    background-color: #FFF;
-                    background-clip: padding-box;
-                    border: 2px solid rgba(234, 234, 234, 1);
-                    padding-left: 4px;
-                    padding-right: 4px;
-
-                    &:focus {
-                        color: #212529;
-                        background-color: #fff;
-                        border-color: $colorTextPink;
-                        outline: 0;
-                        box-shadow: 0 0 0 2px $colorTextPink;
-                    }
-                }
-            }
+        &:focus {
+            color: #212529;
+            background-color: #fff;
+            border-color: $colorTextPink;
+            outline: 0;
+            box-shadow: 0 0 0 2px $colorTextPink;
         }
     }
 
-    &__buttons {
+    &-button_position {
         margin-bottom: 128px;
         width: 652px;
         display: flex;
         justify-content: space-between;
         @include font_style(14px, 300);
-
-        .button_right {
-            animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 both;
-        }
-
-        .cart__button {
-            padding: 17px 41px;
-            text-align: center;
-            height: 50px;
-            color: $colorBlack;
-            @include font_style(14px, 300);
-            background-color: #FFF;
-            border: 1px solid #A4A4A4;
-            transition: all 1s;
-            cursor: pointer; 
-
-            &:hover {
-                border: 1px solid #9F9F9F;
-                background-color: rgba(241, 109, 127, 1);
-                color: #FFF;
-            }
-        }
     }
 
-    &__checkout {
-        width: 360px;
-        height: 214px;
-        background-color: #F5F3F3;
-        margin-top: 57px;
+    &__button {
+        padding: 17px 41px;
+        text-align: center;
+        height: 50px;
+        color: $colorBlack;
+        @include font_style(14px, 300);
+        background-color: #FFF;
+        border: 1px solid #A4A4A4;
+        transition: all 1s;
+        cursor: pointer; 
 
-        .checkout__button {
-            width: 273px;
-            height: 50px;
-            @include font_style(16px, 300);
+        &:hover {
+            border: 1px solid #9F9F9F;
+            background-color: rgba(241, 109, 127, 1);
             color: #FFF;
-            padding: 15px 41px;
-            margin-top: 17px;
-            margin-left: 42px;
-            text-align: center;
-            background-color: $colorTextPink;
-            border: 0;
-
-            &:hover {
-                border: 1px solid #6F6E6E;
-                background-color: transparent;
-                color: $colorBlack;
-                transition: all 1s;
-                cursor: pointer; 
-            }
         }
     }
 
-    &__text_sub {
+    &__button_right {
+        animation: scale-up-center 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) 2 both;
+    }
+}
+
+.shopping-adress {
+    margin-top: 113px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &__shipping-adress {
+        color: $colorBlack;
+        @include font_style(16px, 300);
+    }
+
+    &__input {
+        width: 323px;
+        height: 44px;
+        border: 1px solid #A4A4A4;
+        padding-left: 17px;
+        padding-right: 17px;
+        margin-bottom: 20px;
+        text-overflow: ellipsis;
+        color: $colorBlack;
+        @include font_style(14px, 400);
+
+        &:hover {
+            border-color: rgba(241, 109, 127, 1);
+        }
+
+        &:focus {
+            border-color: transparent;
+            outline: 0;
+            box-shadow: 0 0 0 0.15rem rgba(241, 109, 127, 1);
+        }
+
+        &::placeholder {
+            color: #B1B1B1;
+            @include font_style(14px, 400);
+        }
+
+        &:hover::placeholder {
+            color: $colorBlack;
+            opacity: 1;
+        }
+    }
+
+    &__button {
+        margin-top: 3px;
+        width: 101.408px;
+        height: 35px;
+        text-align: center;
+        color: #4A4A4A;
+        background-color: #FFF;
+        border: 1px solid #A4A4A4;
+        transition: all 1s;
+        @include font_style(11px, 300);
+
+        &:hover {
+            border: 1px solid #B1B1B1;
+            background-color: rgba(241, 109, 127, 1);
+            color: #FFF;
+            cursor: pointer; 
+        }
+    }
+}
+
+.shop-checkout {
+    width: 360px;
+    height: 214px;
+    background-color: #F5F3F3;
+    margin-top: 57px;
+
+    &__subtext {
         color: #4A4A4A;
         @include font_style(11px, 400);
         padding-top: 39px;
@@ -211,7 +251,7 @@ input::-webkit-inner-spin-button {
         }
     }
 
-    &__text_total {
+    &__totaltext {
         text-align: center;
         position: relative;
         padding: 21px;
@@ -237,70 +277,25 @@ input::-webkit-inner-spin-button {
             padding-left: 26px;
         }
     }
-}
 
-.shopping-cart__adress {
-    margin-top: 113px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-
-    &__heading_adress {
-        color: $colorBlack;
+    &__button {
+        width: 273px;
+        height: 50px;
         @include font_style(16px, 300);
-    }
+        color: #FFF;
+        padding: 15px 41px;
+        margin-top: 17px;
+        margin-left: 42px;
+        text-align: center;
+        background-color: $colorTextPink;
+        border: 0;
 
-    .adress-input {
-
-        &__text {
-            width: 323px;
-            height: 44px;
-            border: 1px solid #A4A4A4;
-            padding-left: 17px;
-            padding-right: 17px;
-            margin-bottom: 20px;
-            text-overflow: ellipsis;
+        &:hover {
+            border: 1px solid #6F6E6E;
+            background-color: transparent;
             color: $colorBlack;
-            @include font_style(14px, 400);
-
-            &:hover {
-                border-color: rgba(241, 109, 127, 1);
-            }
-
-            &:focus {
-                border-color: transparent;
-                outline: 0;
-                box-shadow: 0 0 0 0.15rem rgba(241, 109, 127, 1);
-            }
-
-            &::placeholder {
-                color: #B1B1B1;
-                @include font_style(14px, 400);
-            }
-
-            &:hover::placeholder {
-                color: $colorBlack;
-                opacity: 1;
-            }
-        }
-
-        &__button {
-            margin-top: 3px;
-            width: 101.408px;
-            height: 35px;
-            text-align: center;
-            color: #4A4A4A;
-            background-color: #FFF;
-            border: 1px solid #A4A4A4;
             transition: all 1s;
-            @include font_style(11px, 300);
-
-            &:hover {
-                border: 1px solid #B1B1B1;
-                background-color: rgba(241, 109, 127, 1);
-                color: #FFF;
-                cursor: pointer; 
-            }
+            cursor: pointer; 
         }
     }
 }

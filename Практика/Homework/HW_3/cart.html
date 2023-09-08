@@ -82,14 +82,14 @@
         <section class="top-header center">
             <h2 class="top-header__heading">SHOPPING CART</h2>
         </section>
-        <div class="shopping-cartbox center">
-            <section class="shopping-cart">
-                <article class="shopping-cart__list-box list-box_top">
+        <div class="shopping-cart-box center">
+            <section class="shopping-cart-section">
+                <article class="shopping-cart shopping-cart_top">
                     <img src="img/card__photo_top.jpg" alt="card__photo">
                     <div class="shopping-cart__content">
                         <header class="shopping-cart__heading">
                             MANGO PEOPLE<br>T-SHIRT
-                            <a href="#" class="cart__close">
+                            <a href="#" class="shopping-cart__close">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                     fill="none">
                                     <path
@@ -99,25 +99,25 @@
                             </a>
                         </header>
                         <ul class="shopping-cart__list">
-                            <li class="cart__price">Price:</li>
-                            <li class="cart__color">Color:</li>
-                            <li class="cart__size">Size:</li>
-                            <li class="cart__quantity">
-                                <div class="cart__quantity__input" action="#">
-                                    <label class="cart__quantity__input__label" for="cart-number_1">Quantity:</label>
-                                    <input class="cart__quantity__input__number" type="number" value="2" step="1" min="1" max="99"
+                            <li class="shopping-cart__price">Price:</li>
+                            <li class="shopping-cart__color">Color:</li>
+                            <li class="shopping-cart__size">Size:</li>
+                            <li class="shopping-cart__quantity">
+                                <div class="shopping-cart__form" action="#">
+                                    <label class="shopping-cart__label" for="cart-number_1">Quantity:</label>
+                                    <input class="shopping-cart__input" type="number" value="2" step="1" min="1" max="99"
                                         name="cart-number" id="cart-number_1" required>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </article>
-                <article class="shopping-cart__list-box list-box_down">
+                <article class="shopping-cart shopping-cart_down">
                     <img src="img/card__photo_down.jpg" alt="card__photo">
                     <div class="shopping-cart__content">
                         <header class="shopping-cart__heading">
                             MANGO PEOPLE<br>T-SHIRT
-                            <a href="#" class="cart__close">
+                            <a href="#" class="shopping-cart__close">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                                     fill="none">
                                     <path
@@ -127,38 +127,38 @@
                             </a>
                         </header>
                         <ul class="shopping-cart__list">
-                            <li class="cart__price">Price:</li>
-                            <li class="cart__color">Color:</li>
-                            <li class="cart__size">Size:</li>
-                            <li class="cart__quantity">
-                                <div class="cart__quantity__input" action="#">
-                                    <label class="cart__quantity__input" for="cart-number_1">Quantity:</label>
-                                    <input class="cart__quantity__input__number" type="number" value="2" step="1" min="1" max="99"
-                                        name="cart-number" id="cart-number_2" required>
+                            <li class="shopping-cart__price">Price:</li>
+                            <li class="shopping-cart__color">Color:</li>
+                            <li class="shopping-cart__size">Size:</li>
+                            <li class="shopping-cart__quantity">
+                                <div class="shopping-cart__form" action="#">
+                                    <label class="shopping-cart__label" for="cart-number_1">Quantity:</label>
+                                    <input class="shopping-cart__input" type="number" value="2" step="1" min="1" max="99"
+                                        name="cart-number" id="cart-number_1" required>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </article>
-                <div class="shopping-cart__buttons">
-                    <button class="cart__button button_left">CLEAR SHOPPING CART</button>
-                    <button class="cart__button button_right" onclick="document.location='catalog.html'">CONTINUE SHOPPING</button>
+                <div class="shopping-cart-button_position">
+                    <button class="shopping-cart__button shopping-cart__button_left">CLEAR SHOPPING CART</button>
+                    <button class="shopping-cart__button shopping-cart__button_right" onclick="document.location='catalog.html'">CONTINUE SHOPPING</button>
                 </div>
             </section>
-            <section class="cart-adress">
-                <article class="shopping-cart__adress">
-                    <header class="shopping-cart__heading_adress">SHIPPING ADRESS</header>
-                    <form class="adress-input" action="#">
-                        <input class="adress-input__text" type="text" placeholder="Bangladesh" autofocus required>
-                        <input class="adress-input__text" type="text" placeholder="State" required>
-                        <input class="adress-input__text" type="text" placeholder="Postcode / Zip" required>
-                        <button class="adress-input__button" type="submit">GET A&nbsp;QUOTE</button>
+            <section class="shop-checkout-section">
+                <article class="shopping-adress">
+                    <header class="shopping-adress__shipping-adress">SHIPPING ADRESS</header>
+                    <form class="shopping-adress__form" action="#">
+                        <input class="shopping-adress__input" type="text" placeholder="Bangladesh" autofocus required>
+                        <input class="shopping-adress__input" type="text" placeholder="State" required>
+                        <input class="shopping-adress__input" type="text" placeholder="Postcode / Zip" required>
+                        <button class="shopping-adress__button" type="submit">GET A&nbsp;QUOTE</button>
                     </form>
                 </article>
-                <div class="shopping-cart__checkout">
-                    <h3 class="shopping-cart__text_sub">SUB TOTAL</h3>
-                    <h2 class="shopping-cart__text_total">GRAND TOTAL</h2>
-                    <button class="checkout__button">PROCEED&nbsp;TO&nbsp;CHECKOUT</button>
+                <div class="shop-checkout">
+                    <h3 class="shop-checkout__subtext">SUB TOTAL</h3>
+                    <h2 class="shop-checkout__totaltext">GRAND TOTAL</h2>
+                    <button class="shop-checkout__button">PROCEED&nbsp;TO&nbsp;CHECKOUT</button>
                 </div>
             </section>
         </div>
