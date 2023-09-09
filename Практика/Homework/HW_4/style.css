@@ -15,10 +15,6 @@ svg {
   padding: 0;
 }
 
-.dropdown__menu_product {
-  top: 75px;
-}
-
 .top-header {
   background: #f8f3f4;
   padding-top: 60px;
@@ -26,7 +22,6 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 148px;
 }
 .top-header__heading {
   font-family: Lato;
@@ -35,6 +30,10 @@ svg {
   font-weight: 400;
   line-height: normal;
   color: #F16D7F;
+}
+.top-header_product {
+  padding-top: 56px;
+  padding-bottom: 56px;
 }
 .top-header .bredcrumbs__link {
   font-family: Lato;
