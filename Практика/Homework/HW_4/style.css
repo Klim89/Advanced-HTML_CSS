@@ -1873,7 +1873,7 @@ body {
 
 .subscribe .box {
   position: relative;
-  max-height: 448px;
+  height: 448px;
   background: url(img/subscribe_back.png), lightgray 0px -169px/100% 246.875% no-repeat;
   background-position: bottom;
   background-size: cover;
