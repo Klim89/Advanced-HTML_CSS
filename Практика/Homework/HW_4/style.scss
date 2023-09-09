@@ -802,6 +802,7 @@ body {
             background-color: #FFF;
             transition: all 1s;
             animation: shake-top 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            cursor: pointer;
 
             @media (max-width: 767px) {
                 margin-bottom: 85px;
@@ -1141,6 +1142,7 @@ body {
         color: #FFF;
         @include font_style(14px, 400);
         animation: blink-2 5s infinite both;
+        cursor: pointer;
 
         @media (max-width: 767px) {
             height: 47px;

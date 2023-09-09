@@ -245,6 +245,7 @@ svg {
   background-color: #FFF;
   border: 1px solid rgb(255, 106, 106);
   transition: all 0.5s;
+  cursor: pointer;
 }
 .promo-block__button__add:hover {
   border: 1px solid #9F9F9F;
@@ -1753,6 +1754,7 @@ body {
   background-color: #FFF;
   transition: all 1s;
   animation: shake-top 5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .container .down__button .button {
@@ -2145,6 +2147,7 @@ body {
   font-weight: 400;
   line-height: normal;
   animation: blink-2 5s infinite both;
+  cursor: pointer;
 }
 @media (max-width: 767px) {
   .subscribe__button {
