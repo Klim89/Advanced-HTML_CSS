@@ -260,7 +260,7 @@ body {
             padding-bottom: 26px;
             padding-right: 16px;
         }
-        
+
         .dropdown__menu {
             padding-bottom: 21px;
             position: absolute;
@@ -612,7 +612,7 @@ body {
     }
 }
 
-.down__content {
+.down-content {
     @media (max-width: 1165px) {
         max-width: 734.58px;
     }
@@ -768,51 +768,27 @@ body {
         }
     }
 
-    @media (max-width: 767px) {
-        .down__button {
-            margin-top: 40.61px;
+    &__button {
+        padding: 15px 39px;
+        color: #F26376;
+        text-align: center;
+        @include font_style(16px, 400);
+        border: 1px solid #F26376;
+        background-color: #FFF;
+        transition: all 1s;
+        animation: shake-top 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        margin: 48px 465px 0;
+        cursor: pointer;
+
+        &:hover {
+            border: 1px solid #9F9F9F;
+            background-color: rgba(241, 109, 127, 1);
+            color: #FFF;
         }
 
-        .button {
+        @media (max-width: 767px) {
             margin-bottom: 85px;
-        }
-    }
-}
-
-.container {
-    position: relative;
-    padding-bottom: 95px;
-
-    .down__button {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        margin-top: 48px;
-
-        .button {
-            white-space: nowrap;
-            padding-top: 15px;
-            padding-bottom: 14px;
-            padding-left: 39px;
-            padding-right: 39px;
-            color: #F26376;
-            text-align: center;
-            @include font_style(16px, 400);
-            border: 1px solid #F26376;
-            background-color: #FFF;
-            transition: all 1s;
-            animation: shake-top 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-            cursor: pointer;
-
-            @media (max-width: 767px) {
-                margin-bottom: 85px;
-            }
-
-            &:hover {
-                border: 1px solid #9F9F9F;
-                background-color: rgba(241, 109, 127, 1);
-                color: #FFF;
-            }
+            margin-top: 40.61px;
         }
     }
 }
@@ -1153,7 +1129,6 @@ body {
             height: 45px;
         }
     }
-
 }
 
 .footer {
