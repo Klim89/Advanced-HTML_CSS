@@ -702,7 +702,7 @@ input::-webkit-inner-spin-button {
 }
 .shopping-adress__button {
   margin-top: 3px;
-  width: 101.408px;
+  padding: 10px 14px 12px 15px;
   height: 35px;
   text-align: center;
   color: #4A4A4A;
@@ -781,7 +781,6 @@ input::-webkit-inner-spin-button {
   padding-left: 26px;
 }
 .shop-checkout__button {
-  width: 273px;
   height: 50px;
   font-family: Lato;
   font-size: 16px;
@@ -936,9 +935,6 @@ fieldset {
 .registration-form__button {
   display: flex;
   gap: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 50px;
   font-family: Lato;
   font-size: 14px;

@@ -113,7 +113,6 @@ fieldset {
     &__button {
         display: flex;
         gap: 20px;
-        @include centerflex();
         height: 50px;
         @include font_style(14px, 400);
         color: $colorBlack;
