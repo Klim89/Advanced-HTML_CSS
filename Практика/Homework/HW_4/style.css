@@ -935,6 +935,9 @@ fieldset {
 .registration-form__button {
   display: flex;
   gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   font-family: Lato;
   font-size: 14px;
