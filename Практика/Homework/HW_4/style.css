@@ -776,7 +776,7 @@ fieldset {
   border: 0 none;
 }
 
-.registration-form {
+.registration-form__box {
   padding-top: 64px;
   padding-bottom: 96px;
 }
@@ -792,7 +792,6 @@ fieldset {
   line-height: normal;
   color: #222;
   margin-bottom: 21px;
-  margin-top: 33px;
 }
 .registration-form__input {
   width: 321.6px;
@@ -932,8 +931,6 @@ fieldset {
 }
 
 .registration-loyalty {
-  padding-top: 64px;
-  padding-bottom: 277px;
   font-family: Lato;
   font-size: 24px;
   font-style: normal;

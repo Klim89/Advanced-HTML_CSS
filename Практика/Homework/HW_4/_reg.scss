@@ -5,9 +5,13 @@ fieldset {
     border: 0 none;
 }
 
+
 .registration-form {
-    padding-top: 64px;
-    padding-bottom: 96px;
+
+    &__box {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
 
     &__position {
         display: flex;
@@ -18,7 +22,6 @@ fieldset {
         @include font_style(16px, 300);
         color: $colorBlack;
         margin-bottom: 21px;
-        margin-top: 33px;
     }
 
     &__input {
@@ -139,8 +142,6 @@ fieldset {
 }
 
 .registration-loyalty {
-    padding-top: 64px;
-    padding-bottom: 277px;
     @include font_style(24px, 300);
     color: #000;
 
