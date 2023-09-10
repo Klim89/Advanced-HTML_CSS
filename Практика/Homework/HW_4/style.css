@@ -1134,7 +1134,7 @@ body {
   visibility: hidden;
 }
 .header__burger-input:checked ~ .drop-down-menu {
-  display: none;
+  display: block;
 }
 @media (max-width: 767px) {
   .header__human-icon {
@@ -1177,6 +1177,7 @@ body {
 }
 
 .drop-down-menu {
+  display: none;
   padding-bottom: 21px;
   position: absolute;
   box-sizing: border-box;
