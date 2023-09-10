@@ -482,9 +482,9 @@ input::-webkit-inner-spin-button {
 .shopping-cart__box {
   display: flex;
   gap: 129px;
+  margin-top: 96px;
 }
 .shopping-cart__section {
-  margin-top: 96px;
   display: flex;
   flex-direction: column;
   gap: 40px;
