@@ -5,14 +5,14 @@ fieldset {
     border: 0 none;
 }
 
-.registration {
-    display: flex;
-    gap: 128px;
-}
-
 .registration-form {
     padding-top: 64px;
     padding-bottom: 96px;
+
+    &__position {
+        display: flex;
+        gap: 128px;
+    }
 
     &__legend {
         @include font_style(16px, 300);

@@ -1,21 +1,12 @@
 @import 'vars';
 @import 'mixins';
 
-body {
-    font-family: 'Lato', sans-serif;
-}
-
 summary {
     display: block;
-}
 
-summary::-webkit-details-marker {
-    display: none;
-}
-
-svg {
-    margin: 0;
-    padding: 0;
+    &::-webkit-details-marker {
+        display: none;
+    }
 }
 
 .top-header {
@@ -36,7 +27,7 @@ svg {
         padding-bottom: 56px;
     }
 
-    .bredcrumbs__link {
+    &__bredcrumbs-link {
         @include font_style(14px, 300);
         color: #636363;
 
@@ -57,12 +48,12 @@ svg {
 
     &-inner {
         background-color: #F7F7F7;
+    }
 
-        .product_img {
-            max-width: 597px;
-            max-height: 724px;
-            flex-shrink: 0;
-        }
+    &-img {
+        max-width: 597px;
+        max-height: 724px;
+        flex-shrink: 0;
     }
 
     &-item {
@@ -73,8 +64,9 @@ svg {
         padding-right: calc(50% - 800px);
     }
 
-    &-control-next {
-        &-icon {
+    &-control {
+
+        &-next-icon {
             width: 47px;
             height: 47px;
             background-color: rgba(42, 42, 42, 0.15);
@@ -86,10 +78,8 @@ svg {
                 transition: all 1s;
             }
         }
-    }
 
-    &-control-prev {
-        &-icon {
+        &-prev-icon {
             width: 47px;
             height: 47px;
             background-color: rgba(42, 42, 42, 0.15);
@@ -104,13 +94,6 @@ svg {
     }
 }
 
-.product__list {
-    @include centerflex();
-    gap: 30px;
-    margin-top: 664.59px;
-    margin-bottom: 128px;
-}
-
 .promo-block {
     width: 1141px;
     position: relative;
@@ -122,7 +105,17 @@ svg {
     height: 600.177px;
     flex-shrink: 0;
 
-    &__collection {
+    &__position {
+        position: relative;
+    }
+
+    &__box {
+        position: absolute;
+        z-index: 10;
+        top: 712px;
+    }
+
+    &__collection-name {
         color: $colorTextPink;
         @include font_style(14px, 300);
         text-align: center;
@@ -138,7 +131,7 @@ svg {
         }
     }
 
-    &__product {
+    &__product-name {
         text-align: center;
         color: #4D4D4D;
         @include font_style(18px, 300);
@@ -147,7 +140,7 @@ svg {
 
     }
 
-    &__text {
+    &__promo-text {
         display: inline-block;
         max-width: 555px;
         text-align: center;
@@ -177,82 +170,59 @@ svg {
         padding-top: 65.05px;
         @include centerflex();
         gap: 23px;
+    }
 
-        &__details {
+    &__sort-details {
+        position: relative;
+    }
 
-            position: relative;
-        }
+    &__sort-summary {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
 
-        &__summary {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-        }
+    &__sort-heading {
+        color: #6F6E6E;
+        @include font_style(14px, 400);
+    }
 
-        &__box {
-            position: absolute;
-            width: 79px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            background: #FFF;
-            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
-            padding: 7px 30px 11px 9px;
-            z-index: 10;
-            left: 5px;
-        }
-
-        &__check {
-            display: flex;
-            align-items: center;
-            gap: 9px;
-            color: #6F6E6E;
-            @include font_style(14px, 400);
-            font-family: 'Roboto', sans-serif;
-        }
-
-        &__heading {
-            color: #6F6E6E;
-            @include font_style(14px, 400);
-        }
+    &__button-box {
+        @include centerflex();
+        margin-top: 48.41px;
+        margin-bottom: 64.5px;
     }
 
     &__button {
         @include centerflex();
-        margin-top: 48.41px;
-        margin-bottom: 64.5px;
+        gap: 23px;
+        padding: 15px 57px 14px 24px;
+        height: 48.406px;
+        @include font_style(16px, 400);
+        color: #F26376;
+        background-color: #FFF;
+        border: 1px solid rgba(255, 106, 106, 1);
+        transition: all 0.5s;
+        cursor: pointer;
 
-        &__add {
-            @include centerflex();
-            gap: 23px;
-            width: 212px;
-            height: 48.406px;
-            @include font_style(16px, 400);
-            color: #F26376;
-            background-color: #FFF;
-            border: 1px solid rgba(255, 106, 106, 1);
-            transition: all 0.5s;
-            cursor: pointer;
+        &:hover {
+            border: 1px solid #9F9F9F;
+            background-color: rgba(241, 109, 127, 1);
+            color: #FFF;
+        }
 
-            &:hover {
-                border: 1px solid #9F9F9F;
-                background-color: rgba(241, 109, 127, 1);
-                color: #FFF;
-            }
-
-            &:hover path {
-                fill: #FFF;
-            }
+        &:hover path {
+            fill: #FFF;
         }
     }
 }
 
-.block__position {
-    position: relative;
-}
+// #burger {
+//     position: absolute;
+//     left: -999999px;
+//     visibility: hidden;
+// }
 
-.promo-block__box {
-    position: absolute;
-    z-index: 10;
-    top: 712px;
-}
+// #burger:checked~ .dropdown-menu {
+//     display: none;
+// } 

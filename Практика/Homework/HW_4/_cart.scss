@@ -32,12 +32,12 @@ input::-webkit-inner-spin-button {
 
 .shopping-cart {
 
-    &-box {
+    &__box {
         display: flex;
         gap: 129px;
     }
 
-    &-section {
+    &__section {
         margin-top: 96px;
         display: flex;
         flex-direction: column;
@@ -106,11 +106,12 @@ input::-webkit-inner-spin-button {
         color: #6F6E6E;
     }
 
-    &__label {
+    &__form {
         display: flex;
         align-items: flex-end;
         gap: 24.41px;
         text-overflow: ellipsis;
+        width: 44px;
     }
 
     &__input {
@@ -118,8 +119,6 @@ input::-webkit-inner-spin-button {
         left: 153px;
         bottom: 62.05px;
         text-align: center;
-        width: 44px;
-        height: 24.95px;
         @include font_style(18px, 400);
         color: #656565;
         background-color: #FFF;
@@ -137,7 +136,7 @@ input::-webkit-inner-spin-button {
         }
     }
 
-    &-button_position {
+    &__button-box {
         margin-bottom: 128px;
         width: 652px;
         display: flex;
