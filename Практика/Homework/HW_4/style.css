@@ -966,6 +966,7 @@ fieldset {
   cursor: pointer;
   list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='16' viewBox='0 0 20 16' fill='none'%3E%3Cpath d='M19.8035 0H18.0904C17.8502 0 17.6222 0.111827 17.4752 0.303176L7.3702 13.2826L2.52481 7.05754C2.45151 6.96318 2.35808 6.88688 2.25153 6.83438C2.14499 6.78187 2.0281 6.75451 1.90963 6.75437H0.196467C0.032258 6.75437 -0.0584248 6.94572 0.0420614 7.07494L6.75503 15.6981C7.06874 16.1006 7.67166 16.1006 7.98782 15.6981L19.9579 0.318087C20.0584 0.191349 19.9677 0 19.8035 0Z' fill='#F16D7F'/%3E%3C/svg%3E");
 }
+
 @keyframes scale-in-center {
   0% {
     transform: scale(0);
@@ -1132,7 +1133,7 @@ body {
   left: -999999px;
   visibility: hidden;
 }
-.header__burger-input:checked ~ .dropdown-menu {
+.header__burger-input:checked ~ .drop-down-menu {
   display: none;
 }
 @media (max-width: 767px) {
@@ -1175,7 +1176,7 @@ body {
   }
 }
 
-.dropdown-menu {
+.drop-down-menu {
   padding-bottom: 21px;
   position: absolute;
   box-sizing: border-box;
@@ -1186,24 +1187,27 @@ body {
   animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   z-index: 10;
 }
+.drop-down-menu_product-page {
+  top: 75px;
+}
 @media (max-width: 1165px) {
-  .dropdown-menu {
+  .drop-down-menu {
     max-height: 100vh;
   }
 }
 @media (max-width: 767px) {
-  .dropdown-menu {
+  .drop-down-menu {
     left: -230px;
   }
 }
-.dropdown-menu__close-icon {
+.drop-down-menu__close-icon {
   padding: 16px 203px;
   position: absolute;
 }
-.dropdown-menu__close-icon:hover path {
+.drop-down-menu__close-icon:hover path {
   fill: #F16D7F;
 }
-.dropdown-menu__heading {
+.drop-down-menu__heading {
   color: #000;
   font-family: Lato;
   font-size: 14px;
@@ -1214,7 +1218,7 @@ body {
   margin-bottom: 24px;
   margin-left: 34px;
 }
-.dropdown-menu__title {
+.drop-down-menu__title {
   display: block;
   margin-left: 32px;
   margin-bottom: 1px;
@@ -1226,7 +1230,7 @@ body {
   line-height: normal;
   color: #F16D7F;
 }
-.dropdown-menu__ul {
+.drop-down-menu__ul {
   list-style-type: none;
   padding-left: 53.5px;
   padding-top: 11px;
@@ -1237,7 +1241,7 @@ body {
   line-height: normal;
   color: #6F6E6E;
 }
-.dropdown-menu__list {
+.drop-down-menu__list {
   display: block;
   color: #6F6E6E;
   font-family: Lato;
@@ -1247,7 +1251,7 @@ body {
   line-height: normal;
   margin-bottom: 11px;
 }
-.dropdown-menu__list:hover {
+.drop-down-menu__list:hover {
   color: #F16D7F;
 }
 
