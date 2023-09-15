@@ -53,7 +53,7 @@ body {
     top: 14px;
     right: 24px;
 
-    &:before {
+    &::before {
         content: counter(count);
     }
 }
@@ -72,3 +72,5 @@ body {
         }
     }
 }
+
+
