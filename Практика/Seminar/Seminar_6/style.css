@@ -1,0 +1,138 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  counter-reset: count;
+}
+
+@keyframes buld-light-1 {
+  0% {
+    left: -50px;
+    top: 23vh;
+  }
+  50% {
+    left: 25vw;
+    top: 61vh;
+  }
+  100% {
+    left: 100vw;
+    top: 36vh;
+  }
+}
+@keyframes buld-light-2 {
+  0% {
+    left: -50px;
+    top: 71vh;
+  }
+  50% {
+    left: 18vw;
+    top: 16vh;
+  }
+  100% {
+    left: 100vw;
+    top: 90vh;
+  }
+}
+@keyframes buld-light-3 {
+  0% {
+    left: -50px;
+    top: 44vh;
+  }
+  50% {
+    left: 27vw;
+    top: 72vh;
+  }
+  100% {
+    left: 100vw;
+    top: 75vh;
+  }
+}
+@keyframes fill-1 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellowgreen;
+  }
+  100% {
+    fill: yellow;
+  }
+}
+@keyframes fill-2 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellowgreen;
+  }
+  100% {
+    fill: yellow;
+  }
+}
+@keyframes fill-3 {
+  0% {
+    fill: transparent;
+  }
+  50% {
+    fill: yellowgreen;
+  }
+  100% {
+    fill: yellow;
+  }
+}
+.game-box {
+  background-image: url(/Практика/Seminar/Seminar_6/5612a15975a20c1a2db4725bcfa12c94.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+}
+.game-box__lable {
+  position: absolute;
+}
+.game-box__lable_1 {
+  animation: buld-light-1 5s ease-in 1s both;
+}
+.game-box__lable_2 {
+  animation: buld-light-2 5s ease-in 2s both;
+}
+.game-box__lable_3 {
+  animation: buld-light-3 5s ease-in 3s both;
+}
+.game-box__svg {
+  width: 50px;
+  height: 50px;
+}
+.game-box__svg_1 {
+  animation: buld-light-1 5s ease-in 1s both;
+}
+.game-box__svg_2 {
+  animation: buld-light-2 5s ease-in 2s both;
+}
+.game-box__svg_3 {
+  animation: buld-light-3 5s ease-in 3s both;
+}
+.game-box__svg path {
+  fill: yellow;
+  animation: fill-1 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 1s both;
+  animation: fill-2 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+  animation: fill-3 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) 3s both;
+}
+.game-box__svg__title {
+  color: aliceblue;
+}
+.game-box__svg__title::before {
+  content: counter(count);
+}
+.game-box__svg__input:checked {
+  counter-increment: count;
+}
+.game-box__svg__input {
+  position: absolute;
+  visibility: hidden;
+  left: -99999999px;
+}/*# sourceMappingURL=style.css.map */
