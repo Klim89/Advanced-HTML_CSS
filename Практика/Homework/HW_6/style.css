@@ -492,6 +492,7 @@ summary::-webkit-details-marker {
   padding-top: 12px;
   display: flex;
   gap: 28px;
+  z-index: 10;
 }
 @media (max-width: 767px) {
   .catalog-sort {
