@@ -789,8 +789,20 @@ input::-webkit-inner-spin-button {
   top: 28px;
   right: 22px;
 }
+@media (max-width: 767px) {
+  .shopping-cart__close {
+    top: 17px;
+    right: 12px;
+  }
+}
 .shopping-cart__close:hover > svg path {
   fill: #F16D7F;
+}
+@media (max-width: 767px) {
+  .shopping-cart__close > svg {
+    width: 9.883px;
+    height: 11.059px;
+  }
 }
 .shopping-cart__list {
   padding-top: 42px;

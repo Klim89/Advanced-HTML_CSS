@@ -132,8 +132,20 @@ input::-webkit-inner-spin-button {
         top: 28px;
         right: 22px;
 
+        @media (max-width: 767px) {
+            top: 17px;
+            right: 12px;
+        }
+
         &:hover>svg path {
             fill: $colorTextPink;
+        }
+
+        & > svg  {
+            @media (max-width: 767px) {
+                width: 9.883px;
+                height: 11.059px;
+            }
         }
     }
 
