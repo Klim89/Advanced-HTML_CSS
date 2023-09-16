@@ -12,43 +12,43 @@ html {
 @keyframes buld-light-1 {
   0% {
     left: -50px;
-    top: 26vh;
+    top: 58vh;
   }
   50% {
-    left: 9vw;
-    top: 36vh;
+    left: 15vw;
+    top: 77vh;
   }
   100% {
     left: 100vw;
-    top: 11vh;
+    top: 30vh;
   }
 }
 @keyframes buld-light-2 {
   0% {
     left: -50px;
-    top: 24vh;
+    top: 11vh;
   }
   50% {
-    left: 44vw;
-    top: 57vh;
+    left: 15vw;
+    top: 67vh;
   }
   100% {
     left: 100vw;
-    top: 40vh;
+    top: 74vh;
   }
 }
 @keyframes buld-light-3 {
   0% {
     left: -50px;
-    top: 71vh;
+    top: 64vh;
   }
   50% {
-    left: 56vw;
-    top: 90vh;
+    left: 4vw;
+    top: 80vh;
   }
   100% {
     left: 100vw;
-    top: 12vh;
+    top: 59vh;
   }
 }
 @keyframes fill-1 {
